@@ -4,23 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chatbot</title>
-  <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
 </head>
 <body>
+  <!-- Chỉ cần dòng script dưới là đủ để bật chatbot toàn khung -->
 
+  <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
   <script>
     window.botpressWebChat.init({
       composerPlaceholder: "Nhập tin nhắn...",
       botId: "botpress-webchat",
       hostUrl: "https://cdn.botpress.cloud/webchat/v2",
       messagingUrl: "https://messaging.botpress.cloud",
-      clientId: "OP5691KR",
+      clientId: "OP5691KR", // ← giữ nguyên ID của bạn ở đây
       enableConversationDeletion: true,
       showPoweredBy: false,
       closeOnEscape: false,
-      open: true
+      open: true // ← Tự động mở khung chatbot
     });
   </script>
-
 </body>
 </html>
