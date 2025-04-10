@@ -6,20 +6,10 @@
   <title>Chatbot</title>
 </head>
 <body>
+  <!-- Chỉ cần dòng script dưới là đủ để bật chatbot toàn khung -->
+
   <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
   <script>
     window.botpressWebChat.init({
-      "composerPlaceholder": "Type your message...",
-      "botConversationDescription": "Tư vấn hỗ trợ trực tuyến",
-      "botId": "botpress-webchat",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v2",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "OP5691KR", // giữ nguyên như trong file cũ
-      "enableConversationDeletion": true,
-      "showPoweredBy": false,
-      "closeOnEscape": false,
-      "open": true // ← dòng này giúp mở sẵn khung chat
-    });
-  </script>
-</body>
-</html>
+      composerPlaceholder: "Nhập tin nhắn...",
+      botId: "botpress-webchat
